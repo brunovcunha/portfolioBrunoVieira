@@ -35,11 +35,11 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 800px;
+    width: 600px;
 }
 
 aside {
-    width: 600px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -168,6 +168,16 @@ section {
 .contato {
     padding: 10px;
     margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.contato:hover{
+    transform: scale(1.1);
+}
+
+.contato:active{
+    transform: scale(1);
 }
 
 @keyframes moveUpDown {
@@ -238,8 +248,13 @@ section {
         margin: auto;
     }
     .image-container img {
+        border-radius: 20px;
         width: 150px;
         margin: 20px;
+    }
+
+    .tecnologias{
+        margin: 0px;
     }
     
     .tecLogos {
